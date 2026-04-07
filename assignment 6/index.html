@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sisonke Segunda</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+
+    <h1 class="header-title">Sisonke Segunda</h1>
+
+    <nav>
+         <ul>
+            <li><a href="#">About Me</a></li>
+
+            <li class="has-dropdown"><a href="#">Work</a>
+            <ul class="dropdown">
+               <li><a href="#">Art</a></li>
+               <li><a href="#">Design</a></li>  
+               <li><a href="#">Web Development</a></li>
+            </ul>
+            </li>
+            <li class="contact-me"><a href="contact.html">Contact Me</a></li>
+         </ul>
+    </nav>
+
+    </div>
+  </header>
+    <main>
+      <div class="home-content">
+        <h1 >Where Artistic Thinking Meets Design & Development</h1>
+        <p class="about-me"> I am a multidisciplinary creative with a passion for art, design, and technology. My work sits at the intersection of visual communication and front-development, where I explore how creativity and code can work together to shape modern experiences.</p>
+      </div>
+    </main>
+
+
+
+  <!-- Button for interaction -->
+  <button id="welcomeBtn">Welcome to My Portfolio</button>
+
+  <!-- Popup message box-->
+  <div id="portfolio-popup">
+    <p>A curated selection of art, branding, visual identity, and design.</p>
+  </div>
+
+
+<section id="featured-works">
+        <div class="featured-images">
+          <h3>Featured Works</h3>
+            <img src="images/art.jpg" alt="Image of a piece of art">
+            <img src="images/design.jpg" alt="Image of a piece of design">
+            <img src="images/web-development.jpg" alt="Image of a piece of web development">
+          </div>
+</section>
+
+<div id="portfolio-popup" style="display: none;">
+  <p>A curated selection of art, branding, visual identity, and design.</p>
+</div>
+       
+         <footer>
+        <p>&copy; 2026 Sisonke Segunda. All rights reserved.</p>
+         </footer>
+
+
+ <script>
+  const button = document.getElementById("welcomeBtn");
+  const popup = document.getElementById("portfolio-popup");
+  const introText = document.getElementById("intro-text");
+
+  button.addEventListener("click", function () {
+
+    alert("Hi, I am a 24-year old multidisciplinary creative passionate about art, design, and technology. I explore the intersection of visual communication and front-end development to create modern experiences. Welcome to my portfolio!");
+
+
+    if (popup.style.display === "none" || popup.style.display === "") {
+      popup.style.display = "block"; 
+      introText.innerText = "Thanks for exploring my work! More projects coming soon.";
+    } else {
+      popup.style.display = "none"; 
+      introText.innerText = "I am a multidisciplinary creative with a passion for art, design, and technology. My work sits at the intersection of visual communication and front-end development, where I explore how creativity and code can work together to shape modern experiences.";
+    }
+  });
+  </script>
+
+
+
+</script>
+  </body>
+</html>

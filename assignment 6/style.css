@@ -1,0 +1,259 @@
+body{
+    margin:20px;
+    color:#333;
+    font-family:'Montserrat', sans-serif;
+    background-color: #eeeeee;
+     padding:20px;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
+    margin: 20px;
+}
+
+.header-title {
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #00008B;
+  text-align: center;
+  margin: 0;
+  display:flex;
+}
+
+.nav{
+    position: absolute;
+    display: inline-block;
+    gap: 10px;
+    color: #00008B;
+
+}
+nav ul {
+   color: #00008B  ;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #ffbf00;
+    cursor: pointer;
+}
+
+.dropdown {
+    display: none;
+    color: #ffbf00;
+    cursor: pointer;
+}
+
+.has-dropdown:hover .dropdown {
+    display: block;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+
+.home-content{
+    margin-top:20px;
+    padding:20px; 
+}
+
+.h1{
+     color: #00008B;
+}
+
+#featured-works{
+    display:flex;
+    justify-content: center;
+    gap:20px
+
+}
+
+.featured-images img{
+    display: block;
+    justify-content: center;
+    padding:10px;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+   
+}
+
+.featured-images :hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.about-me{
+z-index:500;
+color: #333;
+font-size: 18px;
+} 
+
+@media (min-width: 768px) {
+   
+    .featured-images img {
+        display: inline-block;
+        max-width: 300px;
+        max-height: 200px;
+    }
+
+.nav{
+    display: flex;
+    gap: 10px;
+    color: #00008B;   
+} 
+nav ul {
+    position: relative;
+   color: #00008B  ;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #ffbf00;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: none;
+    color: #ffbf00;
+    cursor: pointer;
+}
+
+.has-dropdown:hover .dropdown {
+    display: block;
+    position: fixed;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+    .contact-heading{
+  font-size: 24px;
+  font-weight: 600;
+  color: #00008B;
+  text-align: center;
+  margin: 0;
+
+    }
+
+    .contact-me-text{
+    text-align: center;
+    margin-top: 10px;
+     }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+    .error {
+      color:  #ffbf00;;
+      font-size: 0.9em;
+      margin-top: 3px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      font-size: 1em;
+    }
+
+    button[type="submit"]:hover{
+    color: #ffffff;
+     cursor: pointer;
+     transition: color 0.2s;
+     background-color: #00008B;
+     border: 1px solid #333;
+     border-radius: 4px;
+    }
+
+
+    /* Pop-up styles */
+    .PopUp {
+      display: none; 
+      position: fixed;
+      z-index: 100;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.6);
+    }
+    .PopUp-content {
+      background-color: #fff;
+      margin: 15% auto;
+      padding: 20px;
+      border-radius: 8px;
+      width: 80%;
+      max-width: 400px;
+      text-align: center;
+    }
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 1.5em;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .close:hover {
+      color: #000;
+    }
+   
+    .profile-picture {
+      display: block;
+      margin: 20px auto;
+      width: 500px;
+      object-fit: cover;
+    }
